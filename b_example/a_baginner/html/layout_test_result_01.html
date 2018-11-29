@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Document</title>
+  <style>
+  /* reset.css */
+  html,body{margin: 0; width:100%; height:100%;}
+  h1,h2,h3,h4,h5,h6,p,div,ul,ol,li,dt,dd,dl{margin:0; padding:0;}
+  ul,ol,li{list-style:none;}
+  a{color:#333; text-decoration:none;}
+  a:hover, a:focus{color:#fa0; text-decoration:underline;
+    outline:3px solid #fa0;}
+
+  header,nav,aside,section,article,footer,main,figure{display:block;}
+
+  /* design.css */
+  #wrap {margin: 0 auto; border:5px solid #f06;
+        width: 960px; height:auto;}
+      
+  /* #headBox ------      */
+  #headBox{padding-top: 100px;  box-sizing:border-box;
+    width:100%; height:auto; background-color:#0af;}
+    h1{margin-bottom: 20px; width:380px; height:100px; background-color:#0af; color:#fff; margin-top:10px; margin-left:20px;}
+  #gnb{width:100%; height: 50px; background-color: #079;}
+  #gnb>ul{width:100%; height:100%;}
+  #gnb>ul>li{float:left; width: 25%; height:100%; background-color: #fff; border-right: 1px solid #333; box-sizing:border-box;}
+
+  /* #contentBox------    */
+  #contentBox{width:100%; height:auto;}
+    
+    #contentSub{float:left;
+      width:360px; height:580px; background-color:#fa0;}
+    #contentNarr{float:left;
+      width:600px; height:auto; background-color:#afa;}
+      .narr{width: 100%; height: 145px; 
+        border-bottom:5px solid #333; box-sizing:border-box;}
+      .narr_01{background-color: #a1f;}
+      .narr_02{background-color: #b5a;}
+      .narr_03{background-color: #c97;}
+      .narr_04{background-color: #df5;}
+
+    .clearfix{clear:both;}
+  /* #footBox ------      */
+  #footBox{width:100%; height:120px; background-color:#06a;}
+
+  </style>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1>사이트 이름</h1>
+      <nav id="gnb">
+        <h2>전체메뉴</h2>
+        <ul>
+          <li>list_01</li>
+          <li>list_02</li>
+          <li>list_03</li>
+          <li>list_04</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // #headBox -->
+
+    <section id="contentBox">
+      <h2>본문내용</h2>
+      <aside id="contentSub"></aside>
+      <article id="contentNarr">
+        <h3>sss</h3>
+        <article class="narr narr_01"></article>
+          <h4></h4>
+        <article class="narr narr_02"></article>
+          <h4></h4>
+        <article class="narr narr_03"></article>
+          <h4></h4>
+        <article class="narr narr_04"></article>
+          <h4></h4>
+      </article>
+      <div class="clearfix"></div>
+    </section>
+    <!-- // #contentBox -->
+
+    <footer id="footBox">
+    </footer>
+    <!-- // #footBox -->
+
+  </div>
+
+  <!-- script -->
+  <script></script>
+</body>
+</html>

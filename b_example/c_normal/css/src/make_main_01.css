@@ -1,0 +1,34 @@
+#wrap{width: 30rem; height:2770px; margin:auto; background-color: #fa0;}
+/* wrap ================================================================================*/
+
+#headBox{width:480px; height:70px; background-color: #faf;}
+
+#logo{width: 100px; height: 70px; float: left; background-color: #aff}
+#sub_menu{width: 65px; height: 70px; float: right; background-color: #aff;}
+
+/*==========================headBox and==================================================*/
+
+#adBox{ padding-top:195px; box-sizing: border-box; width: 480px; height: 728px; background-color: #777;}
+
+#ad_01{width: 298px; height: 390px; background-color: #888; margin: auto;}
+
+/*==================================adBox and==========================================*/
+
+#contentBox_01{padding-top:20px;box-sizing: border-box; width:480px; height:315px; background-color:#94a;}
+#content_01{width:400px; height:45px; margin:auto; margin-bottom:30px; background-color:#6f7;}
+#comtent_02{width:438px; height:185px; margin:auto; background-color: #9ff;}
+
+/*===========================contentBox and ===========================================*/
+
+#contentBox_02{padding-top:20px; padding-left:20px; box-sizing: border-box; width:480px; height:320px; background-color:#59f;}
+#conBox_01{width:190px; height:260px; background-color:#333;}
+
+/*============================contentBox_02 and========================================*/
+
+#contentBox_03{width:480px; height:412px; background-color:#faa;}
+#conbox{width:480px; height:170px; padding-top:10px;box-sizing: border-box; background-color: #17f6f7;}
+#conbox_01{width:328px; height:25px; margin:auto; margin-bottom:20px; background-color:#23f48a;}
+
+#conbox_02{width:170px; height:245px; float:left; background-color: #684;}
+#text_02{width:120px; height:30px; margin:auto; margin-top:10px; box-sizing: border-box; margin-bottom:10px; background-color:#ff4;}
+#text_03{width:120px; height:155px; margin:auto; background-color:#9ff;}

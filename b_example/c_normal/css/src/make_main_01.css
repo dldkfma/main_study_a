@@ -1,34 +1,73 @@
-#wrap{width: 30rem; height:2770px; margin:auto; background-color: #fa0;}
-/* wrap ================================================================================*/
+#wrap{width:100%; height:auto; margin:auto; background-color: #fa0;}
 
-#headBox{width:480px; height:70px; background-color: #faf;}
+/*===============================wrap===========================================*/
 
-#logo{width: 100px; height: 70px; float: left; background-color: #aff}
-#sub_menu{width: 65px; height: 70px; float: right; background-color: #aff;}
+@media screen and (max-width:480px){
 
-/*==========================headBox and==================================================*/
+  #headBox{width:480px; height:70px; background-color: #faf;}
 
-#adBox{ padding-top:195px; box-sizing: border-box; width: 480px; height: 728px; background-color: #777;}
+  #adBox{width: 480px; height: 728px; background-color: #777;}
 
-#ad_01{width: 298px; height: 390px; background-color: #888; margin: auto;}
+  #contentBox_01{width:480px; height:315px; background-color:#94a;}
 
-/*==================================adBox and==========================================*/
+  #contentBox_02{width:480px; height:320px; background-color:#59f;}
 
-#contentBox_01{padding-top:20px;box-sizing: border-box; width:480px; height:315px; background-color:#94a;}
-#content_01{width:400px; height:45px; margin:auto; margin-bottom:30px; background-color:#6f7;}
-#comtent_02{width:438px; height:185px; margin:auto; background-color: #9ff;}
+  #contentBox_03{width:480px; height:412px; background-color:#faa;}
 
-/*===========================contentBox and ===========================================*/
+  #contentBox_04{width:480px; height:250px; background-color:#999;}
 
-#contentBox_02{padding-top:20px; padding-left:20px; box-sizing: border-box; width:480px; height:320px; background-color:#59f;}
-#conBox_01{width:190px; height:260px; background-color:#333;}
+  #contentBox_05{width:480px; height:250px; background-color:#ff4;}
 
-/*============================contentBox_02 and========================================*/
+  #contentBox_06{width:480px; height:250px; background-color: #4ff;}
 
-#contentBox_03{width:480px; height:412px; background-color:#faa;}
-#conbox{width:480px; height:170px; padding-top:10px;box-sizing: border-box; background-color: #17f6f7;}
-#conbox_01{width:328px; height:25px; margin:auto; margin-bottom:20px; background-color:#23f48a;}
+  #contentBox_07{width:480px; height:250px; background-color:#19f;}
 
-#conbox_02{width:170px; height:245px; float:left; background-color: #684;}
-#text_02{width:120px; height:30px; margin:auto; margin-top:10px; box-sizing: border-box; margin-bottom:10px; background-color:#ff4;}
-#text_03{width:120px; height:155px; margin:auto; background-color:#9ff;}
+  #footBox{width:480px; height:70px; background-color:#5f44ae;}
+}
+ 
+ /*============================mobale and ========================================*/
+
+@media screen and (min-width:481px) and (max-width:768px){
+
+  #headBox{width:768px; height:70px; background-color:#afa;}
+  #adBox{width:768px; height:610px;  background-color:#689;}
+  #contentBox_01{width:768px; height:405px; background-color:#196;}
+  #contentBox_02{width:768px; height:385px; background-color:#ffa;}
+  #contentBox_03{width:768px; height:545px; background-color:#fdd;}
+  #contentBox_04{width:768px; height:450px; background-color:#8a6e1f;}
+  #contentBox_05{width:768px; height:295px; background-color:#ffae11;}|
+  #contentBox_06{display:none;}
+  #contentBox_07{display:none;}
+  #footBox{width:786px; height:156px; background-color:#445efa;}
+}
+
+/*===============================tablet and==========================================*/
+
+@media screen and (min-width:769px) and (max-width:1366px) {
+
+  #headBox{width:100%; height:11.8307692307vw;/*769/130*100*/ background-color:#554aff;}
+  #adBox{width:100%; height:945px; background-color:#99fa;}
+  #contentBox_01{width: 100%; height:545px; background-color:#1766ba;}
+  #contentBox_02{width: 100%; height:545px; background-color:#ffffaa;}
+  #contentBox_03{width: 100%; height:815px; background-color:#89faad;}
+  #contentBox_04{width: 100%; height:658px; background-color:#addd15;} 
+  #contentBox_05{width: 100%; height:388px; background-color:#855fff;}
+  #contentBox_06{display: none;}
+  #contentBox_07{display: none;}
+  #footBox{width:100%; height:178px; background-color:#99eedd;}
+
+}
+
+@media screen and (min-width:1367px){
+
+  #headBox{width:100%; height:130px; background-color:#546824;}
+  #adBox{width:100%; height:940px; background-color:#ffccff;}
+  #contentBox_01{width:100%; height: 528px; background-color:#f555aa;}
+  #contentBox_02{width: 100%; height: 525px; background-color:#667788;}
+  #contentBox_03{width: 100%; height: 890px; background-color:#ccaf46;}
+  #contentBox_04{width: 100%; height: 810px; background-color:#ee5514;}
+  #contentBox_05{width: 100%; height: 440px; background-color:#faccef;}
+  #contentBox_06{display: none;}
+  #contentBox_07{display: none;}
+  #footBox{width:100%; height:228px; background-color:#3d7815;}
+}

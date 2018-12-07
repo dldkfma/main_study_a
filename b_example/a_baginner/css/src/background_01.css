@@ -1,0 +1,163 @@
+/*background_01.css*/
+
+#wrap{ width:100%; height:auto; min-height: 10rem; background-color: #ddd}
+#headBox{width:100%; height: auto;}
+h1{padding:1rem 0; width: 100%; height: auto; background-color: #a8f; text-indent: 2rem;}
+
+#bgBox_01{margin-top:2rem; padding:0 1rem; width: 100%; height: auto; min-height: 1rem; background-color: #fff;}
+
+h2{border-bottom: 0.2rem solid #a8f; margin-bottom: 1rem;}
+h3{width:100%; height: auto; padding:0.5rem; box-sizing: border-box; background-color: #acf;}
+
+.icon{margin:1rem auto; width: 80%; height: 30rem; border:1px solid #333; border-radius: 1rem 0.5rem 0 0.6rem; /*box-shadow:0.5rem 0.5rem 0.5rem #acf, -0.1rem -0.1rem 0.2rem #f06, -0.2rem 1rem 0.2rem rgba(255,255,0,0.5);*/}
+
+.icon_01{background-image: url("../../img/icon/picachu.png"); background-repeat:no-repeat;background-position: 100% 0; /*transition: all 300ms linear;*/}
+.icon_01:hover{background-position:20% 150%; animation:exloding 1000ms infinite ease;}
+
+@keyframes exloding {
+ 0%{background-position:20% -100%;} 100%{background-position:20% 200%;}} 
+
+.icon_02{background-image: url("../../img/icon/game.png"); background-repeat: no-repeat; background-position:70% auto; background-size:50% auto;
+ transition: all 300ms linear;} 
+
+.icon_02:hover{background-size:120% auto;}
+
+/*no-repeat= 작은 이미지가 패턴처럼 반복되는 것을 하지 않겠다는 뜻.
+  repeat-x= 가로로 패턴을 반복하도록 하는 뜻 
+  repeat-y= 세로로 패턴을 반복하도록 하는 뜻 
+  background-position= 이미지의 위치를 조정할 수 있게 하는 태그.
+  위치마다 값을 지정해줄 수 있다.(모든 태그는 대부분 x좌표부터 지정.),(y좌표),(좌),(우)*/
+
+  /* background-position: x축 y축;, 즉  0 0;으로 구성. (콤마는 쓰지않는다. 콤마를 쓰는 순간 다른 아이로 인식되기 때문)
+  x와 y축은 의미상의 용어로 사용이 가능하다 (top,left,right,bottom)
+  이때 top이나 left처럼 한쪽으로 위치를 잡고 다른 위치 하나는 중심에 위치한다면 center라는 용어는 생략해도 된다.
+  둘 모두 center라면 하나만 입력한다. 
+
+  *: background-position의 기능에서 용어를 이용한 위치는 그리 권장하지 않는다. 가급적이면 %의 수치나 정확한 좌표값을 입력하여 배치할것을 권장
+
+  background-size: 내용 이미지의 크기를 지정하는 기능
+  cover / contain
+  가로크기,세로크기값 따로 조정 가능하지만 둘 중 하나는 입력하지 않으면 자동화된다. 
+  단, 새로운 값을 입력하고 가로크기는 자동으로 변형하게 하려면 auto 세로크기; 
+
+  cover: 이미지를 꽉자게 지정할 수 있다.
+  contain: 모든 이미지를 표현 할 수 있음.
+
+  현재 background-size는 권고안으로 등록되어있지 않다.
+
+  w3c html5.2 -> w3c 권고안을 자주 참고하는 것이 좋다. 
+  */
+
+.icon_03{background-image: url("../../img/icon/loket.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover; background-color: #acf;}
+.icon_03>span{direction:block; position: relative; z-index: -1; width: 0; height: 0; overflow: hidden;}
+
+.icon_04{width:3rem; height:4rem; border-radius:0.2rem; background-image: url(../../img/icon/mouse_icons.png); background-repeat: no-repeat; background-position: -465px -452px;}
+
+
+/*test=======================================*/
+
+.exam{width:100%; height:10rem; background-color: #ddd;}
+ul{width:100%; height:auto;}
+ul:after, .exam>ul::after,{content:" "; display:block; clear: both;}
+.exam>ul>li{margin:1rem; float:left; border:1px solid #333; width:110px; height: 120px; border-radius:0.5rem;}
+
+.exam a{display:block; width:100%; height:100%; background-image: url("../../img/icon/smashicons.png"); background-repeat: no-repeat;}
+.exam a>span{display: block; width: 0; height: 0; position: relative; z-index: -1; overflow:hidden;}
+
+.exam>ul>li:nth-child(1)>a{background-position:0 -244;}
+.exam>ul>li:nth-child(1)>a:hover{background-position:-232px 0;}
+.exam>ul>li:nth-child(1)>a:focus{background-position:-120px -120px;}
+.exam>ul>li:nth-child(1)>a:active{background-position: 0 0;}
+
+.exam>ul>li:nth-child(2)>a{background-position:-230px 0;}
+.exam>ul>li:nth-child(2)>a:hover{background-position: -465px 0;}
+.exam>ul>li:nth-child(2)>a:focus
+.exam>ul>li:nth-child(2)>a:active
+
+.exam>ul>li:nth-child(3)>a:{background-position:-590px 0;}
+
+
+#bgArea{padding: 1rem; margin:3rem; width:80%; height: auto; background-repeat: #cda;}
+
+.bg_area{margin:1rem auto; margin-bottom: 1rem; padding:2rem; border:1rem solid #64a; width:80%; height:10rem; background-color:#fff; color: #fff; text-align: center; font-size: 2rem; font-weight: bold; text-shadow: 0.3rem 0.3rem 0.1rem #000; background-image: url("../../img/bg/city_01.jpg"); background-repeat:no-repeat; background-position: center; background-size:100%; transition: all 200ms linear;}
+
+.bg_area:hover{background-size: 120%;}
+
+/*.area_01{background-clip: } 기본은 border-box*/
+.area_02{background-clip: border-box;}
+.area_03{background-clip: padding-box;}
+.area_04{background-clip: content-box;}
+
+
+
+
+.bg_img{background-image:url("../../img/bg/city_01.jpg"); background-repeat:no-repeat; background-position: center; background-size:100%; transition: all 200ms linear; border-color:#fa0;}
+
+/*.img_01{} 기본은 padding-box */
+.img_02{background-origin: border-box;}/*보더 라인까지 포함하여 이미지 채우기 */
+.img_03{background-origin: padding-box;}/*패딩값 까지 이미지 채우기 */
+.img_04{background-origin: content-box;}/*패딩값이 적용된 후의 내용까지만 채우기 */
+
+/*
+배경색상을 정해진 요소에 채우게 될 경우 색상의 범위룰 지정할 수 있다. |
+(background-clip)
+*border-box *padding-box *content-box
+배경이미지를 정해진 요소의 크기만큼 채울경우 그 범위를 지정할 수 있다. 
+(background-origin)
+*border-box *padding-box *content-box
+
+*border-box의 의미: 외곽선의 영역까지 
+*padding-box의 의미: 보더를 제외한 패딩의 영역까지
+*content-box의 의미: 실제 보더, 패딩이아닌 내용의 영역까지. 
+
+background-clip과 background-origin은 css새로운 속성이므로 prefix를 달아야한다. 
+*/
+
+
+#bgArea_02{margin-bottom:100rem; widows:100%; height:auto; border: 2px solid #fa0; }
+
+#bgArea_02>div{widows:100%; height:20rem; background-repeat:no-repeat; background-position: 50%; background-size: cover;}
+
+#bgArea_02>.fixed{background-image:url(../../img/bg/city_02.jpg); }
+#bgArea_02>.scroll{background-image: url(../../img/bg/city_03.jpg);}
+
+/*background-attachment
+브라우저에서 이미지를 position:fixed;처리하는 것 처럼 배경이미지에도 적용시켜주는 효과
+*background-attachment:fixed; background-attachment:scroll; 두종류뿐이다.
+
+하지만, 간단히 이미지를 고정시키는 용도로만 사용 가능!
+parallals기능을 이용하는 경우에는 scroll기능으로 사용한다.  
+*/
+
+
+#gradient{margin:auto; widows:80%; height:auto;}
+#gradient>div{padding:1rem; box-sizing: padding-box; width: 100%; height: 15rem;  border: 1px solid #333;margin-bottom:2rem;}
+
+.linear_01{background-image:linear-gradient(#fa0, #f0a);}
+.linear_02{background-image:linear-gradient(90deg, #fa0 30%,#f0a 60%, #acf);}
+
+.linear_03{background-image:linear-gradient(145deg, #fa0, #fff 30%, #fa0 30%, #f06);}
+
+
+
+.linear_04{position:relative; background-image:linear-gradient(0deg, #fac, #45f);}
+.linear_04:before{content: " "; display:block; position: absolute; top:0; left: 0; width: 100%; height: 100%; background-image:linear-gradient(145deg, #fa0, #fff 30%, #fa0 30%, #f06); transition: all 300ms linear; opacity: 0.7;}
+.linear_04:hover:before{opacity: 0;}
+
+.linear_05{background-image:radial-gradient(#fff 20%, #fca 70%, #37a);}
+
+
+/*background-image:url();
+  background-position:0 0;
+  background-repeat: ;
+
+  background-color: #fff;
+  background-clip:;
+  background-origin:;
+  background-size:;
+  background-attachment:;
+
+  background-image:linear-gradient(각도 색a 위치, 각도 색b 위치);
+
+
+ */

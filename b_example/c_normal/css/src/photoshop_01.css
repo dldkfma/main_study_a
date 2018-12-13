@@ -1,0 +1,32 @@
+/*photoshop_01.css*/
+
+#wrap{width:100%; height:750px;background-color:#ffaa00;}
+
+/*=====================wrap and===============================*/
+
+#mini_submenu{width:100%; height:30px; background-color:#888888;}
+h2{float:left;}
+.sub_Box{width:435px; height:30px;float:right;background-color:#fff30d;}
+.sub_Box>li{width:100px; height:30px; float:left;box-sizing: border-box;}
+.li_01{background-color:#888888;}
+.li_02{background-color:#555555;}
+.li_03{background-color:#fff30d;}
+
+/*=====================mini_submenu and===========================*/
+
+#articleBox{width:100%; height:600px; background-color:#adadad;}
+#headBox{width:248px; height:600px; float:left; background-color:#777777; padding-top:30px; box-sizing:border-box;}
+#headBox>.h1_01{width:150px; height:30px; margin:auto; background-color:#777777; border:1px solid #ffffff; font-size:1.8rem; text-align:center; }
+
+.head_menu{width:100%; height:200px; margin-top:30px;}
+.mainmenu{width:140px; height:40px; border-bottom:3px solid #ffffff;font-size:1.5rem; color:#ffffff; margin:auto;}
+
+.head_li_01{margin-top:8px; box-sizing: border-box;}
+
+
+.head_li_01{}
+/*====================articleBox/headBoox and======================*/
+
+
+#footBox{width:100%; height:110px; background-color:#ffffff;}
+.foot_subBox{width:300px; height:130px; margin-left:600px; margin-bottom:60px; background-color:#fff44f;}

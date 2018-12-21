@@ -1,0 +1,17 @@
+
+#wrap{width:500px; height:auto; margin:auto; background-image: url(../../img/images_01.jpg); background-repeat: no-repeat; background-size:100%;}
+
+
+.bc1{width:310px; height:170px; background-color:#222222; padding:10px; box-sizing: border-box;}
+
+.id{width:150px; height:30px; background-color:#454751; margin-left:10px; margin-bottom:10px; border:none;}
+.pw{width:150px; height:30px; background-color:#454751; margin-left:11px; margin-bottom:12px; border:none;}
+
+.tx1{font-size:12pt; text-align: center; font-weight: bold; color:#b9b9b9; padding-right:30px; padding-bottom: 12px;}
+.tx2{font-size:12pt; text-align: center; font-weight: bold; color:#b9b9b9; padding-right:28px;}
+
+.oo{width:100px; height:20px; padding-top:15px; color:#fff; font-size:8pt;}
+
+.sbmeP{width:140px; height:35px; background-color:transparent; padding-left:20px;}
+
+#submit{width:140px; height:35px; background-color:#41a6ec; margin-left:35px; border:none;}

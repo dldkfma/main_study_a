@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<!--login_02.html-->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0 maximum-scale=3.0, minimum-scale=0.5" />
+  <meta name="keyword" content="html,css,responsive">
+
+
+
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/base/common.css" />
+  <link rel="stylesheet" href="../css/src/login_02.css" />
+
+    <!--[if IE]>
+    <script src="../../IE/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../../IE/css3pie/PIE_IE9.js"></script>
+    <script src="../../IE/ie9.min.js"></script>
+    <script src="../../IE/repond1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="apple-touch-icon" href="../favicon.png">
+      
+     <!-- link:favicon --> 
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+
+  <title>title name</title>
+</head>
+<body>
+
+ <div class="box01">
+ 	<h1>회원가입</h1>
+  
+     
+       <form action="#" method="post">
+       	<fieldset id="fieldset">
+      <table summary="회원가입" class="table">
+      <caption class="hidden">간단한 표 만들기</caption> 		
+      
+       <tr>
+         <td>아이디</td>
+         <td><input type="text" name="id id="id" value="" />
+         <input type="submit" name="id" id="id" value="중복확인" />
+         </td>
+       </tr>
+         <tr>
+         <td>이름</td>
+         <td><input type="text" name="name" id="name" value="" /></td>
+       </tr>
+       <tr>
+         <td>성별</td>
+         <td><input type="checkbox" name="gender" id="gender" value="" />여성
+         <input type="checkbox" name="gender" id="gender" value="" />남성</td>
+       </tr>
+       <tr>
+         <td>암호</td>
+         <td><input type="password" name="pw" id="pw" value="" /></td>
+       </tr>
+
+        <tr>
+         <td>암호확인</td>
+         <td><input type="password" name="r_pw" id="r_pw" value="" /> *같은 암호를 입력하세요</td>
+       </tr>
+
+        <tr>
+         <td>이메일</td>
+         <td><input type="text" name="email" id="email" value="" /> @ <input type="text" name="email_01" id="email_01" value="" /> 
+         <select> name="mail" id="mail">
+         	<option value="naver">naver.com</option>
+         	<option value="gmail">gmail.com</option>
+         	<option value="daum">daum.net</option>
+         </select>
+         </td>
+       </tr>
+       <tr>
+         <td>주소찾기</td>
+         <td><input type="text" name="are" id="are" value="" /><input type="submit" name="are_01" id="are_01" value="주소찾기" /></td>
+       </tr>
+
+       <tr>
+         <td>휴대폰</td>
+         <td><input type="checkbox" name="sell" id="sell" value="" />SKT
+         <input type="checkbox" name="sell_01" id="sell_01" value="" />KT
+         <input type="checkbox" name="sell_02" id="sell_02" value="" />LGU+ <br />
+         <select name="sell_03" id="sell_03">
+         	<option value="010">010</option>
+         	<option value="017">017</option>
+         	<option value="031">031</option>
+         </select> -
+         <input type="text" name="sell_04" id="sell_04" value="" /> -
+         <input type="text" name="sell_05" id="sell_05" value="" />
+       </tr>
+
+        <tr>
+         <td>관심</td>
+         <td><input type="checkbox" name="craetive" id="craetive" value="" />쇼핑
+         	<input type="checkbox" name="craetive" id="craetive" value="" />게임
+         	<input type="checkbox" name="craetive" id="craetive" value="" />여행
+         	<input type="checkbox" name="craetive" id="craetive" value="" />기타 </td>
+
+        <tr>
+         <td>자기소개</td>
+         <td><textarea name="my" id="my" cols="70" rows="10" /></textarea>
+        </tr>
+
+      </table>
+
+        <table class="tt">
+
+       <tr class="td_06">
+        	<td class="td1">
+        	    <input type="submit" name="true" id="true" value="확인">
+        	    <input type="submit" name="replay" id="replay" value="다시입력" />
+       		</td>
+        </tr>    
+        </table>
+
+        </form>
+       </fieldset>
+
+  
+ </div>
+
+
+  
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script> 
+  
+</body>
+</html>
+

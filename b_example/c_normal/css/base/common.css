@@ -3,7 +3,7 @@
 #wrap{margin:0 auto; }
 
 /* common.css */
-.hidden_wrap a, .hidden_wrap button {display: block; width: 100%; height: 100%;}
+.hidden_wrap a, .hidden_wrap button {display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position:50% 50%;}
 
 .hidden,
 .hidden_wrap a>span,
@@ -12,3 +12,4 @@
 
 .container{margin:auto; padding: 0 0.625rem; box-sizing: border-box; width: auto; max-width: 60rem; height: auto;}
 .container_wrap{margin:auto; padding:0 0.625rem; box-sizing: border-box; width: auto; max-width: auto; height: auto;}
+.container{margin:auto; width:60rem; height:100%;background-color:rgba(0,0,0,0.2);}

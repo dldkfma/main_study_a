@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<!--.html-->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0 maximum-scale=3.0, minimum-scale=0.5" />
+  <meta name="keyword" content="html,css,responsive">
+
+
+
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/base/common.css" />
+  <link rel="stylesheet" href="../css/src/stop_01.css" />
+
+    <!--[if IE]>
+    <script src="../../IE/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../../IE/css3pie/PIE_IE9.js"></script>
+    <script src="../../IE/ie9.min.js"></script>
+    <script src="../../IE/repond1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="apple-touch-icon" href="../favicon.png">
+      
+     <!-- link:favicon --> 
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+
+  <title>title name</title>
+  <style type="text/css">
+
+
+  .box{width:50px; height: 50px; background-color:#777; text-align: center;line-height:50px; color:#333;}
+
+  button{padding:0.5rem; cursor:pointer;}
+  	
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+	<div class="box">box</div>
+	<button type="button" class="start">start</button>
+	<button type="button" class="stop">stop</button>
+	
+
+  
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script> 
+
+
+  <script>
+  	(function($){
+        var move = 0;
+
+  		$('start').on('click', function(e){
+          e.preventDefault();
+          move +=100;
+          $('box').animate({marginLeft:move+'px'},2000);
+  		});
+
+
+
+        $('.stop').on('click',function(e){
+          e.preventDefault();
+
+          $('box').stop(false,false);
+        });
+  	})(jQuery);
+
+
+  </script>
+  
+</body>
+</html>
+

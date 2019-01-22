@@ -73,4 +73,106 @@ gnb.on({'mouseenter' : addView , 'mouseleave' : removeView});
 
 
 
+// adbanner영역의 구성을 변경.(기존의 개수엣 마지막 하나를 복제하여 앞에 배치.)
+var viewBannerLast = viewBannerList.eq(-1).clone(true);
+//viewBannerList.eq(0).before(viewBannerLast);
+viewBannerLast.prepend(viewBannerLast);
+
+//내용 변경 후 갯수를 다시 파악
+viewBannerList = viewBannerchildren('li');
+// 감싸는 영역의 크기를 갯수 * 100% 크기만큼으로 변경. 
+var len = viewBannerList.length;
+console.log(len);
+
+
+viewBanner.css({width: len * 100 + '%', marginLeft: -})
+
+
+// 첫번째 보이는 요소는 첫배너로 처리하기위해 전체를 왼쪽으로 이동.
+// css문서에서 nth로 배경이미지를 처리하면 안된다. 각각의 네임을 부여해 처리하는 것이 원칙.
+
+
+var banner = $('#adBanner');
+var viewOuter = banner.find('view_outer');
+var viewBanner = viewOuter.find('ul');
+var viewBannerList = viewBanner.children('li');
+
+
+
+
+//인디케이터
+
+
+
+
+
+// 좌,우 버튼을 클릭하든 인디케이트를 클릭하든 공통의기능을 하는 변수가 하나 필요.
+var showI = 0;
+viewBanner.css({marginLeft: showI * -100 + '%' });
+
+
+//좌,우 버튼 클릭시
+
+
+
+// 일정시간마다 자동으로 순환하는 기능을 만들기.
+//왼버튼 클릭시 showI -= --> -1의었던 아이를 leng-2의 수치로 변경하여 해당위치로 이동하게 만들자.   
+
+
+//clearInterval(function(){}); //setInterval을 강제로 멈추게 하는 함수.
+
+
+prevBtn.on('click',function{
+preventDefault();
+if(showI <= 0){
+	showI = -1;
+}else{
+showI  -= 1;
+SlideBanner(showI);
+}
+
+
+
+
+});
+
+
+
+var news = $('.news');
+  var newsCon = news.children('.container');
+  // var newsList = $('.news_list');
+  var newsList = '<div class="news_list"><a href="#"><div class="img_list"></div><dl><dt>title</dt><dd>content</dd></dl></a></div>';
+
+
+  // 링크,  사진, 제목, 내용
+var newsArray = [
+    {"link":"url", "pic":"pic.jpg", "tit":"title", "con":"content"},
+    {"link":"url", "pic":"pic.jpg", "tit":"title", "con":"content"},
+    {"link":"url", "pic":"pic.jpg", "tit":"title", "con":"content"},
+    {"link":"url", "pic":"pic.jpg", "tit":"title", "con":"content"},
+    {"link":"url", "pic":"pic.jpg", "tit":"title", "con":"content"},
+    {"link":"url", "pic":"pic.jpg", "tit":"title", "con":"content"},
+    {"link":"url", "pic":"pic.jpg", "tit":"title", "con":"content"},
+    {"link":"url", "pic":"pic.jpg", "tit":"title", "con":"content"}
+  ];
+
+  // newsCon.append(newsList);
+ var i = 0, list;
+  for (; i < newsArray.length ; i += 1){
+    newsCon.append(newsList);
+
+    list = $('.news_list').eq(i);
+    list.find('a').attr({'href': newsArray[i].link});
+    list.find('.img_list').css({'backgroundImage': 'url(' + imgUrl + newsArray[i].pic +')'});
+    list.find('dt').text( newsArray[i].tit );
+    list.find('dd').text( newsArray[i].con );
+};
+
+
+
+
+
+
+
+
 })(jQuery);

@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<!--slide_banner_myself.html-->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0 maximum-scale=3.0, minimum-scale=0.5" />
+  <meta name="keyword" content="html,css,responsive">
+
+
+
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/base/common.css" />
+  <link rel="stylesheet" href="../css/src/slide_banner_myself.css" />
+
+    <!--[if IE]>
+    <script src="../../IE/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../../IE/css3pie/PIE_IE9.js"></script>
+    <script src="../../IE/ie9.min.js"></script>
+    <script src="../../IE/repond1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+
+
+  <title>slide banner</title>
+</head>
+<body>
+
+	<div id="wrap">
+		<div class="indicator">
+		<ul>
+			<li><button type="button">click</button></li>
+			<li><button type="button">click</button></li>
+			<li><button type="button">click</button></li>
+			<li><button type="button">click</button></li>
+			<li><button type="button">click</button></li>
+		</ul>
+        </div>
+		<div class="viewBox">
+			<ul>
+				<li><span class="hidden">1</span>1</li>
+				<li><span class="hidden">2</span>2</li>
+				<li><span class="hidden">3</span>3</li>
+				<li><span class="hidden">4</span>4</li>
+				<li><span class="hidden">5</span>5</li>
+			</ul>
+			
+		</div>
+	</div>
+
+  
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script> 
+
+  <script>
+  	(function($){
+  		var viewBox = $('.viewBox');
+  		var viewUl = viewBox.find('ul');
+  		var viewLi = viewUl.children('li');
+
+  		var viewLiLast = viewLi.eq(-1).clone(true);
+  		viewUl.prepend(viewLiLast);
+
+  		viewUl.css({position:'relative' ,left:0, width:600 + '%', marginLeft: -100 + '%'});
+
+
+  		var viewLiLast = viewUl.children('li');
+
+
+  		var indi = $('.indicator');
+  		var indiUl = indi.find('ul');
+  		var indiLi = indiUl.children('li');
+  		var indiBtn = indiLi.find('button');
+  		var num = 0;
+
+  		indiLi.on('click', function(e){
+        e.preventDefault();
+            
+  			num = $(this).index();
+  			console.log(num);
+
+  			listBtn = num * 100;
+
+  			viewUl.animate({left:num * -100 + '%'});
+
+
+  		});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	})(jQuery);
+  </script>
+  
+</body>
+</html>
+

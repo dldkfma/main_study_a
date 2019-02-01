@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Happy Camper';
+    src: url('hinted-Happy-Camper-Regular.eot');
+    src: url('hinted-Happy-Camper-Regular.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Happy-Camper-Regular.woff2') format('woff2'),
+        url('hinted-Happy-Camper-Regular.woff') format('woff'),
+        url('hinted-Happy-Camper-Regular.ttf') format('truetype'),
+        url('hinted-Happy-Camper-Regular.svg#Happy-Camper-Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
